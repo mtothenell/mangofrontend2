@@ -18,16 +18,14 @@ function App() {
 
     return (
         <>
-            <div className="jumbotron text-center"
-                 style={{backgroundColor: '#B5C99A', border: 0, margin: 0, borderRadius: 10}}>
+            <div className="jumbotron text-center">
                 <div className="container">
                     <h1>Mango padel</h1>
                     <p>En community för oss som älskar padel!</p>
                 </div>
             </div>
 
-            <nav className="navbar navbar-inverse"
-                 style={{height: '5vh', border: 0, margin: 0, borderRadius: 10, backgroundColor: "#485635"}}>
+            <nav className="navbar navbar-inverse">
                 <div className="container-fluid">
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -51,8 +49,7 @@ function App() {
                 </div>
             </nav>
 
-            <div className="container-fluid"
-                 style={{backgroundColor: "#FFF9C9", margin: 0, borderRadius: 10}}>
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm-12">
                         <h2>Medlemmar</h2>
@@ -68,8 +65,7 @@ function App() {
                 </div>
             </div>
 
-            <div className="jumbotron text-center"
-                 style={{marginBottom: 0, backgroundColor: "#862B0D", margin: 0, borderRadius: 10}}>
+            <div className="jumbotron text-center jumbotron-bottom">
                 <div className="container">
                     <h1>Under konstruktion...</h1>
                     <p>Just nu inte anpassad för mobilvy!</p>
