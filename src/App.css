@@ -2,6 +2,5 @@
     .jumbotron, .navbar{
         background-color: #e71e1e; /* Replace with your desired background color for mobile */
         color: red;
-        font-size: 24px
     }
 }
