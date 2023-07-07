@@ -18,7 +18,7 @@ function App() {
 
     return (
         <>
-            <div className="jumbotron text-center"
+            <div className="jumbotron text-center" id="test"
                  style={{backgroundColor: '#B5C99A', minHeight: '30vh', border: 0, margin: 0, borderRadius: 10}}>
                 <div className="container">
                     <h1>Mango padel</h1>
