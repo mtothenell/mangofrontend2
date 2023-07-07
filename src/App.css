@@ -1,5 +1,7 @@
-@media (max-width: 576px) {
-    #test{
-        background-color: red;
+@media (max-width: 500px) {
+    .jumbotron, .navbar{
+        background-color: #e71e1e; /* Replace with your desired background color for mobile */
+        color: red;
+        font-size: 24px
     }
 }

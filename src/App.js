@@ -18,7 +18,7 @@ function App() {
 
     return (
         <>
-            <div className="jumbotron text-center" id="test"
+            <div className="jumbotron text-center test"
                  style={{backgroundColor: '#B5C99A', minHeight: '30vh', border: 0, margin: 0, borderRadius: 10}}>
                 <div className="container">
                     <h1>Mango padel</h1>
@@ -26,8 +26,8 @@ function App() {
                 </div>
             </div>
 
-            <nav className="navbar navbar-inverse"
-                 style={{height: '5vh', border: 0, margin: 0, borderRadius: 10, backgroundColor: "#485635"}}>
+            <nav className="navbar navbar-inverse" id="test"
+                 style={{height: '5vh', border: 0, margin: 0, borderRadius: 10, backgroundColor: "#485635",fontSize: '34px'}}>
                 <div className="container-fluid">
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
