@@ -1,12 +1,13 @@
 import React from "react";
 import MemberTable from "../Components/MemberTable";
+import '../Styles/Members.css';
 
 const Members = ({members}) => {
 
     // In class components, render() does not take any arguments. It simply returns JSX code, to specify what React elements to render.
     // In a function component, like function Helloworld() { return () } you dont ned the render() method.
     return (
-        <div>
+        <div className="members">
             <h2>Members</h2>
             <MemberTable members={members}/>
         </div>
