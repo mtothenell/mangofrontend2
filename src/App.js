@@ -1,34 +1,24 @@
-
-import * as Api from "./Api/Api";
-import {useEffect, useState} from "react";
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import Members from "./Pages/Members";
-import Home from "./Pages/Home";
 import React from 'react';
 import './App.css';
-import Navbar from "./Components/Navbar";
 
 function App() {
 
-    const [members, setMembers] = useState([]);
-
-    useEffect(() => {
-        Api.getTime()
-            .then(data => {
-                setMembers(data);
-            })
-    }, [])
-
     return (
         <>
-            <BrowserRouter>
-            <Navbar/>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/members" element={<Members members={members}/>}/>
-                </Routes>
-            </BrowserRouter>
-
+            <div className="page">
+                <main className="content">
+                    <article>
+                        <p>
+                            This is an article of content that sits inline with a sidebar. Resize the
+                            browser to see how when there’s no enough room, the sidebar will stack on to a
+                            new line.
+                        </p>
+                    </article>
+                </main>
+                <aside className="sidebar">
+                    <p>This sidebar will stack where there is not enough room.</p>
+                </aside>
+            </div>
         </>
     );
 }
