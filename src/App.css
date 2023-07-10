@@ -1,44 +1,20 @@
-.page {
+.container {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.page > * {
-    padding: 1rem;
+.item {
+    height: 300px;
+    width: 300px;
 }
 
-.sidebar {
-    flex-grow: 1;
-    flex-basis: 12rem;
+#item-1 {
+    background-color: red;
 }
 
-.content {
-    flex-basis: 0;
-    flex-grow: 2;
-    min-width: 70%;
+#item-2 {
+    background-color: blue;
 }
 
-/* Extrinsic sizes on this page simulate the small viewport for you */
-body {
-    max-width: 50rem;
-    min-height: unset;
-    padding: 1rem;
-    margin: 1rem auto;
-}
-
-.page {
-    background: white;
-}
-
-@media (max-width: 480px) {
-    /* CSS code for mobile version */
-    body, .page{
-        background-color: red;
-    }
-    .sidebar {
-        flex-basis: 100%;
-    }
-    .content {
-        flex-basis: 100%; /* Adjust the width for mobile */
-    }
+#item-3 {
+    background-color: green;
 }
