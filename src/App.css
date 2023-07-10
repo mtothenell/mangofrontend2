@@ -5,3 +5,10 @@ html {
 .container-fluid {
     background-color: #FFF9C9;
 }
+
+@media (max-width: 500px) {
+    .container-fluid {
+        background-color: #FFFFFF;
+        max-width: 50%;
+    }
+}
