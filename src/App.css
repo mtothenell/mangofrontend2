@@ -1,6 +1,5 @@
 .page {
     display: flex;
-    -webkit-flex:1;
     flex-wrap: wrap;
 }
 
@@ -11,7 +10,6 @@
 .sidebar {
     flex-grow: 1;
     flex-basis: 12rem;
-    -webkit-flex:1;
 }
 
 .content {
@@ -30,4 +28,17 @@ body {
 
 .page {
     background: white;
+}
+
+@media (max-width: 480px) {
+    /* CSS code for mobile version */
+    body, .page{
+        background-color: red;
+    }
+    .sidebar {
+        flex-basis: 100%;
+    }
+    .content {
+        flex-basis: 100%; /* Adjust the width for mobile */
+    }
 }
