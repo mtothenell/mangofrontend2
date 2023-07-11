@@ -1,17 +1,31 @@
-import React from 'react';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Header from "../src/Components/Header/Header";
 
 function App() {
+    const [width, setWindowWidth] = useState(0);
+
+    // componentDidMount...runs only once
+    useEffect( () => {
+        updateDimensions();
+        window.addEventListener("resize", updateDimensions);
+        return () => window.removeEventListener("resize", updateDimensions);
+    }, [])
+
+    const updateDimensions = () => {
+        const width = window.innerWidth;
+        setWindowWidth(width);
+    };
+
+    const responsive = {
+        showTopNavMenu: width > 1023
+    }
 
     return (
         <>
-            <div className="container">
-                <div className="item" id="item-1"></div>
-                <div className="item" id="item-2"></div>
-                <div className="item" id="item-3"></div>
-            </div>
+            <Header showTopNavMenu={responsive.showTopNavMenu}/>
         </>
     );
 }
 
 export default App;
+
